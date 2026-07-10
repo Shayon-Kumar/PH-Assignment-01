@@ -209,3 +209,117 @@ header.container{
   color:#2563EB;
 }
 /* Packages Section End */
+/* Challenge Sectrion Start */
+.challenge-sec .container{
+display:grid;
+ grid-template-columns: 1fr 1fr;
+gap:40px;
+}
+.challenge-left img{
+  width:70%;
+  border-radius:12px;
+  margin-top:40px;
+}
+.challenge-right{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.faq__item {
+    background: #ffffff;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 4px 26px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .faq__item[open] {
+    border-color: #2563EB;
+    box-shadow: 0 6px 20px rgba(59, 76, 246, 0.08);
+  }
+
+  .faq__question {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 0;
+    font-family: 'inter' , sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+  }
+
+  .faq__question::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq__icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: rgba(37, 99, 235, 0.3);
+    color: rgba(37, 99, 235, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    transition: transform 0.25s ease;
+  }
+
+  .faq__item[open] .faq__icon {
+    transform: rotate(45deg);
+  }
+
+  .faq__answer {
+    font-size: 15px;
+    line-height: 1.65;
+    color: #575757;
+    padding-bottom: 24px;
+    max-width: 680px;
+  }
+/* Challenge Section End */
+
+/* Footer Section Start */
+footer{
+  background:#0D1B2A !important;
+}
+footer .container{
+  padding-bottom:15px;
+}
+footer .footer-content{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-bottom:20px;
+}
+.footer-logo{
+width:200px;
+}
+.footer-social-icon a{
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 15px;
+}
+.footer-social-icon i{
+  font-size: 17px;
+  color:#fff;
+}
+.footer-social-icon a:hover i{
+  color: #1D4ED8;
+}
+footer hr {
+    border: none;
+    height: 1px;
+    background-color: rgba(37, 99, 235, 0.3);
+}
+footer p{
+  color:rgba(255,255,255,0.5);
+  margin-top:20px;
+  text-align: center;
+}

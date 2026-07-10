@@ -10,13 +10,16 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
   <!-- Header Section Start -->
   <header class="container">
     <div>
-      <img src="./assets/logo.png" alt="">
+      <a href="#index.html"><img src="./assets/logo.png" alt="Logo"></a>
     </div>
     <nav class="nav">
       <ul>
@@ -152,81 +155,118 @@
   </section>
   <!-- Package Section End -->
   <!-- Challenge Section Start -->
-  <div class="faq-list">
-    <details class="faq__item">
-      <summary class="faq__question">
-        When and where is DevConf 2026?
-        <span class="faq__icon">+</span>
-      </summary>
-      <p class="faq__answer">
-        DevConf 2026 runs for three days this fall at the Moscone Center
-        in San Francisco. Exact dates and the full venue address are on
-        the Venue page, along with nearby hotel recommendations.
-      </p>
-    </details>
+  <section class="challenge-sec">
+    <div class="container">
+      <div class="challenge-left">
+        <h2>Common Questions</h2>
+        <p>Everything you need to know before DevConf 2026.
+        </p>
+        <img src="./assets/faq.webp" alt="faq banner">
+      </div>
+      <div class="challenge-right">
+        <details class="faq__item" open>
+          <summary class="faq__question">
+            When and where is DevConf 2026?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </summary>
+          <p class="faq__answer">
+            DevConf 2026 runs for three days this fall at the Moscone Center
+            in San Francisco. Exact dates and the full venue address are on
+            the Venue page, along with nearby hotel recommendations.
+          </p>
+        </details>
 
-    <details class="faq__item">
-      <summary class="faq__question">
-        What's included in my ticket?
-        <span class="faq__icon" aria-hidden="true">+</span>
-      </summary>
-      <p class="faq__answer">
-        Every ticket tier includes access to keynote sessions and the main
-        expo floor. Pro and Team passes add workshop seating, recorded
-        sessions, and networking events — see the pricing section above
-        for a full breakdown by tier.
-      </p>
-    </details>
+        <details class="faq__item">
+          <summary class="faq__question">
+            What's included in my ticket?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </summary>
+          <p class="faq__answer">
+            Every ticket tier includes access to keynote sessions and the main
+            expo floor. Pro and Team passes add workshop seating, recorded
+            sessions, and networking events — see the pricing section above
+            for a full breakdown by tier.
+          </p>
+        </details>
 
-    <details class="faq__item">
-      <summary class="faq__question">
-        Can I get a refund or transfer my ticket?
-        <span class="faq__icon" aria-hidden="true">+</span>
-      </summary>
-      <p class="faq__answer">
-        Tickets are fully refundable up to 30 days before the event and
-        transferable to a colleague at any time — just email
-        support@devconf2026.com with the new attendee's details.
-      </p>
-    </details>
+        <details class="faq__item">
+          <summary class="faq__question">
+            Can I get a refund or transfer my ticket?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </summary>
+          <p class="faq__answer">
+            Tickets are fully refundable up to 30 days before the event and
+            transferable to a colleague at any time — just email
+            support@devconf2026.com with the new attendee's details.
+          </p>
+        </details>
 
-    <details class="faq__item">
-      <summary class="faq__question">
-        Will sessions be recorded?
-        <span class="faq__icon" aria-hidden="true">+</span>
-      </summary>
-      <p class="faq__answer">
-        Yes. Pro and Team ticket holders get on-demand access to every
-        recorded talk, with Pro passes keeping that access for life and
-        Standard passes for 30 days after the event.
-      </p>
-    </details>
+        <details class="faq__item">
+          <summary class="faq__question">
+            Will sessions be recorded?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </summary>
+          <p class="faq__answer">
+            Yes. Pro and Team ticket holders get on-demand access to every
+            recorded talk, with Pro passes keeping that access for life and
+            Standard passes for 30 days after the event.
+          </p>
+        </details>
 
-    <details class="faq__item">
-      <summary class="faq__question">
-        Is there a hackathon or hands-on track?
-        <span class="faq__icon" aria-hidden="true">+</span>
-      </summary>
-      <p class="faq__answer">
-        A 24-hour hackathon runs alongside the main conference, open to
-        all ticket holders. Teams of up to four can enter, and mentors
-        from our speaker lineup will be on the floor throughout.
-      </p>
-    </details>
+        <details class="faq__item">
+          <summary class="faq__question">
+            Is there a hackathon or hands-on track?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </summary>
+          <p class="faq__answer">
+            A 24-hour hackathon runs alongside the main conference, open to
+            all ticket holders. Teams of up to four can enter, and mentors
+            from our speaker lineup will be on the floor throughout.
+          </p>
+        </details>
 
-    <details class="faq__item">
-      <summary class="faq__question">
-        Do you offer group or student discounts?
-        <span class="faq__icon" aria-hidden="true">+</span>
-      </summary>
-      <p class="faq__answer">
-        Groups of 5 or more save 15% automatically at checkout, and
-        students with a valid .edu email get 50% off Standard passes.
-        Reach out to sales@devconf2026.com for team invoicing.
-      </p>
-    </details>
-  </div>
+        <details class="faq__item">
+          <summary class="faq__question">
+            Do you offer group or student discounts?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </summary>
+          <p class="faq__answer">
+            Groups of 5 or more save 15% automatically at checkout, and
+            students with a valid .edu email get 50% off Standard passes.
+            Reach out to sales@devconf2026.com for team invoicing.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+  <!-- Challenge Section End -->
 
+  <!-- Footer Start  -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="#index.html"><img src="./assets/footer-logo.png" alt="Footer Logo"></a>
+        </div>
+        <div class="footer-social-icon">
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+      <hr>
+      <p>© 2026 DevConf. All rights reserved.</p>
+    </div>
+  </footer>
 
 
 
