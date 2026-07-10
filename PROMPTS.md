@@ -1,0 +1,1 @@
+I added the ui image then the promt: Replace the "Something Missing Section" from the image I provide with a brand new section. The section must stay relevant to the DevConf 2026 theme (e.g. Sponsors, Venue, FAQ, Newsletter Signup, Hackathon Details, Past Highlights, Job Board, etc.). Generate the section and give me html file

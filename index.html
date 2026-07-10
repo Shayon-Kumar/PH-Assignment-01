@@ -5,13 +5,231 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assignment 01</title>
+  <link rel="favicon" href="./assets/logo-mini.png">
   <link rel="stylesheet" href="./style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <h2>
-    ASSIGNMENT 01
-  </h2>
+  <!-- Header Section Start -->
+  <header class="container">
+    <div>
+      <img src="./assets/logo.png" alt="">
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Speakers</a></li>
+        <li><a href="#">Schedule</a></li>
+        <li><a href="#">Tracks</a></li>
+        <li><a href="#">Venue</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </nav>
+    <div>
+      <button class="btn">Register Now</button>
+    </div>
+  </header>
+  <!-- header section end -->
+  <!-- Banner Section Start -->
+  <section class="banner">
+    <div class="container">
+      <div class="banner-content">
+        <h1>Code. <em>Connect.</em> Create</h1>
+        <P>Join 4,000+ engineers, founders, and builders at the premier developer conference of 2026. Three days of
+          cutting-edge
+          talks, hands-on workshops, and meaningful connections.</P>
+      </div>
+      <div class="banner-button">
+        <button class="btn">Register Now</button>
+      </div>
+    </div>
+  </section>
+  <!-- Banner Section End -->
+  <!-- Speakers Section Start -->
+  <section class="speakers">
+    <div class="container">
+      <h2>Meet the Speakers</h2>
+      <div class="speakers-grid">
+        <div class="speaker">
+          <img src="./assets/andrej.png" alt="Speaker 1">
+          <div class="speaker-details">
+            <p class="speaker-cat">AI / ML</p>
+            <h3>Andrej Karpathy</h3>
+            <p class="speaker-dsn">Pretraining team, Anthropic</p>
+          </div>
+        </div>
+        <div class="speaker">
+          <img src="./assets/demis.png" alt="Speaker 1">
+          <div class="speaker-details">
+            <p class="speaker-cat">Cloud & DevOps</p>
+            <h3>Demis Hassabis</h3>
+            <p class="speaker-dsn">Co-Founder and CEO, Google DeepMind</p>
+          </div>
+        </div>
+        <div class="speaker">
+          <img src="./assets/gary.png" alt="Speaker 1">
+          <div class="speaker-details">
+            <p class="speaker-cat">Frontend</p>
+            <h3>Gary Marcus</h3>
+            <p class="speaker-dsn">
+              Staff Engineer, Vercel
+            </p>
+          </div>
+        </div>
+        <div class="speaker">
+          <img src="./assets/mustafa.png" alt="Speaker 1">
+          <div class="speaker-details">
+            <p class="speaker-cat">Security</p>
+            <h3>Mustafa Suleyman</h3>
+            <p class="speaker-dsn">CEO of Microsoft AI</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Speakers Section End -->
+  <!-- Package Section Start -->
+  <section class="packages">
+    <div class="container">
+      <h2>Secure Your Spot</h2>
+      <p>Early-bird pricing ends August 15, 2026.</p>
+      <div class="packages-grid">
+        <div class="package">
+          <div>
+            <p class="package-type">Standard</p>
+            <h3 class="package-price">$399</h3>
+            <p class="package-limit">Per Person</p>
+          </div>
+          <hr>
+          <ul>
+            <li>Access to all 3 conference days</li>
+            <li>48 curated technical talks</li>
+            <li>2 workshop sessions</li>
+            <li>Networking lunch & coffee breaks</li>
+            <li>Conference swag bag</li>
+            <li>Digital recordings (30 days)</li>
+          </ul>
+          <button class="btn-outline">Get Standard</button>
+        </div>
+        <div class="package package-highlight">
+          <div>
+            <p class="package-type">Pro</p>
+            <h3 class="package-price">$749</h3>
+            <p class="package-limit">Per Person</p>
+          </div>
+          <hr>
+          <ul>
+            <li>Everything in Standard</li>
+            <li>Unlimited workshop access</li>
+            <li>Speaker meet & greet</li>
+            <li>VIP networking dinner</li>
+            <li>Lifetime recording access</li>
+            <li>1-on-1 mentorship (30 min)</li>
+          </ul>
+          <button class="btn">Get Pro</button>
+        </div>
+        <div class="package">
+          <div>
+            <p class="package-type">Team</p>
+            <h3 class="package-price">$5,999</h3>
+            <p class="package-limit">up to 10 people</p>
+          </div>
+          <hr>
+          <ul>
+            <li>Everything in Pro (10 seats)</li>
+            <li>Dedicated team lounge access</li>
+            <li>Private workshop booking</li>
+            <li>Company logo on event page</li>
+            <li>Recruitment booth (1 day)</li>
+            <li>Priority customer support</li>
+          </ul>
+          <button class="btn-outline">Contact Us</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Package Section End -->
+  <!-- Challenge Section Start -->
+  <div class="faq-list">
+    <details class="faq__item">
+      <summary class="faq__question">
+        When and where is DevConf 2026?
+        <span class="faq__icon">+</span>
+      </summary>
+      <p class="faq__answer">
+        DevConf 2026 runs for three days this fall at the Moscone Center
+        in San Francisco. Exact dates and the full venue address are on
+        the Venue page, along with nearby hotel recommendations.
+      </p>
+    </details>
+
+    <details class="faq__item">
+      <summary class="faq__question">
+        What's included in my ticket?
+        <span class="faq__icon" aria-hidden="true">+</span>
+      </summary>
+      <p class="faq__answer">
+        Every ticket tier includes access to keynote sessions and the main
+        expo floor. Pro and Team passes add workshop seating, recorded
+        sessions, and networking events — see the pricing section above
+        for a full breakdown by tier.
+      </p>
+    </details>
+
+    <details class="faq__item">
+      <summary class="faq__question">
+        Can I get a refund or transfer my ticket?
+        <span class="faq__icon" aria-hidden="true">+</span>
+      </summary>
+      <p class="faq__answer">
+        Tickets are fully refundable up to 30 days before the event and
+        transferable to a colleague at any time — just email
+        support@devconf2026.com with the new attendee's details.
+      </p>
+    </details>
+
+    <details class="faq__item">
+      <summary class="faq__question">
+        Will sessions be recorded?
+        <span class="faq__icon" aria-hidden="true">+</span>
+      </summary>
+      <p class="faq__answer">
+        Yes. Pro and Team ticket holders get on-demand access to every
+        recorded talk, with Pro passes keeping that access for life and
+        Standard passes for 30 days after the event.
+      </p>
+    </details>
+
+    <details class="faq__item">
+      <summary class="faq__question">
+        Is there a hackathon or hands-on track?
+        <span class="faq__icon" aria-hidden="true">+</span>
+      </summary>
+      <p class="faq__answer">
+        A 24-hour hackathon runs alongside the main conference, open to
+        all ticket holders. Teams of up to four can enter, and mentors
+        from our speaker lineup will be on the floor throughout.
+      </p>
+    </details>
+
+    <details class="faq__item">
+      <summary class="faq__question">
+        Do you offer group or student discounts?
+        <span class="faq__icon" aria-hidden="true">+</span>
+      </summary>
+      <p class="faq__answer">
+        Groups of 5 or more save 15% automatically at checkout, and
+        students with a valid .edu email get 50% off Standard passes.
+        Reach out to sales@devconf2026.com for team invoicing.
+      </p>
+    </details>
+  </div>
+
+
+
+
 </body>
 
 </html>
