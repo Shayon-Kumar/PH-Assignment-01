@@ -4,6 +4,11 @@
   padding:0;
   box-sizing:border-box;
 }
+.container{
+  width:1320px;
+  padding:80px 20px;
+  margin:0 auto;
+}
 h1{
   font-size:80px;
   font-weight:700;
@@ -36,11 +41,6 @@ a{
 img{
   width:100%;
 }
-.container{
-  width:1320px;
-  padding:80px 20px;
-  margin:0 auto;
-}
 .btn{
   color:#fff;
   font-size:16px;
@@ -70,6 +70,53 @@ img{
   color:#fff;
   background:#1D4ED8;
 }
+
+/* Common Style Responsive */
+@media(max-width:1500px){
+.container{
+  width:1160px;
+}
+h1{
+  font-size:70px
+}
+h2{
+  font-size: 45px;
+}
+}
+@media(max-width:1024px){
+.container{
+  width:100%;
+  padding:50px 20px;
+
+}
+h1{
+  font-size:55px
+}
+h2{
+  font-size:35px;
+}
+h3{
+  font-size:18px;
+}
+.btn{
+  padding:14px 30px;
+}
+.btn-outline{
+  padding:14px 30px;
+}
+}
+@media(max-width:767px){
+  h1{
+  font-size:35px
+}
+h2{
+  font-size:30px;
+}
+h3{
+  font-size:16px;
+}
+}
+/* Common Style Responsive End */
 /* common styles end*/
 /* Header Section */
 header.container{
@@ -193,7 +240,7 @@ header.container{
 }
 
 .package ul {
-  list-style-position: inside;
+  padding-left: 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -212,7 +259,7 @@ header.container{
 /* Challenge Sectrion Start */
 .challenge-sec .container{
 display:grid;
- grid-template-columns: 1fr 1fr;
+grid-template-columns: 1fr 1fr;
 gap:40px;
 }
 .challenge-left img{
@@ -323,3 +370,56 @@ footer p{
   margin-top:20px;
   text-align: center;
 }
+/* Reponsive style */
+@media(max-width:1024px){
+.banner{
+  height:50vh;
+}
+.banner-content p{
+  width:70%;
+}
+.packages .container{
+  width:100%;
+}
+.package{
+  padding:20px;
+}
+.package-price{
+  font-size:30px;
+}
+}
+@media(max-width:767px){
+.nav{
+    display:none;
+  }
+.banner-content p{
+  width:100%;
+}
+.speaker-details{
+  padding:15px;
+}
+.speaker-dsn{
+  font-size:12px;
+  line-height: 15px;
+}
+.speaker-cat{
+  font-size:12px;
+  line-height:15px;
+}
+.packages-grid{
+
+  grid-template-columns: repeat(1, 1fr);
+}
+.challenge-sec .container{
+grid-template-columns: repeat(1, 1fr);
+}
+.challenge-left img{
+  width:100%;
+}
+.challenge-left{
+  text-align: center;
+}
+}
+/* Reponsive style End*/
+
+
